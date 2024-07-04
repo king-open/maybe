@@ -1,6 +1,6 @@
 {
   "name": "kuo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "用 rust 搭建单线程的 web 页面",
   "main": "list.js",
   "scripts": {
