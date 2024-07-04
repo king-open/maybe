@@ -22,7 +22,7 @@ fn handle_connection(mut stream: TcpStream) {
     let (status_line, filename) = match request_line.as_str() {
         "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
         "GET /list.js HTTP/1.1" => ("HTTP/1.1 200 OK", "list.js"),
-        "GET /styles.css HTTP/1.1" => ("HTTP/1.1 200 OK", "styles.css"),
+        "GET /style.css HTTP/1.1" => ("HTTP/1.1 200 OK", "style.css"),
         _ => ("HTTP/1.1 404 NOT FOUND", "404.html"),
     };
 
